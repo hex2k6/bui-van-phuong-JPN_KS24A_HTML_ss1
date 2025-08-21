@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+div{
+    background-color: rgb(30, 132, 248);
+    color: aliceblue;
+    height: 130px;
+    line-height: 2;
+
+}
+table{
+    padding: 50px;
+    margin: 20px;
+    margin-left: 480px;
+}
+p{
+    background-color: rgba(58, 62, 66, 0.411);
+    height: 60px;
+    line-height: 4;
+}
+a {
+    color: blue;
+    text-decoration: underline;
+}

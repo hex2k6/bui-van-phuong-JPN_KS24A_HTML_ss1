@@ -1,0 +1,20 @@
+/* reset css
+đưa css về trạng thái mạc định */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: rgb(18, 132, 207);
+    width: 200px;
+    height: 100px;
+    color: blanchedalmond;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    border: 12px solid rebeccapurple;
+    border-radius: 34px;
+    text-align: center;
+    line-height: 24pt;
+}

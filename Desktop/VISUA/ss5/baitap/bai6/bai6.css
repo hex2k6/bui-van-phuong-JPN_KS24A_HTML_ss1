@@ -1,0 +1,48 @@
+.text {
+    color: brown;
+}
+
+.text1 {
+    border: 5px solid rgb(90, 204, 45);
+    text-align: center;
+
+}
+
+.text2 {
+    background-color: rgba(146, 158, 163, 0.473);
+}
+
+.text3 {
+    border-left: 5px solid rgb(50, 82, 47);
+    background-color: aliceblue;
+    b
+}
+
+.text4 {
+    color: brown;
+}
+
+.text5 {
+    color: red;
+}
+
+.text6 {
+    color: blue;
+}
+
+.text7 {
+    color: red;
+}
+
+.text8 {
+    color: blue;
+}
+
+.button {
+    border-radius: 8px;
+    background-color: rgb(40, 212, 40);
+    width: 120px;
+    height: 40px;
+    color: aliceblue;
+    border: 2 rgb(13, 34, 13);
+}
