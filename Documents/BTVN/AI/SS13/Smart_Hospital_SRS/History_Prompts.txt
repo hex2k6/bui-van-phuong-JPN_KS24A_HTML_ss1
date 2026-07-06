@@ -1,0 +1,33 @@
+========================================================================
+LỊCH SỬ CÁC CÂU LỆNH PROMPT - THIẾT KẾ HỆ THỐNG SMART HOSPITAL (SRS)
+========================================================================
+
+[PROMPT 1 - Khởi tạo dự án & Định hình bối cảnh]
+"Chào bạn, tôi là một chuyên gia phân tích nghiệp vụ và kiến trúc sư hệ thống độc lập. Tôi cần bạn đóng vai trò là một AI Assistant cao cấp để cùng thiết kế một Bản đặc tả yêu cầu phần mềm (SRS) cho dự án 'Hệ thống Quản lý Bệnh viện Đa khoa Thông minh' (Smart Hospital). Yêu cầu ban đầu là hệ thống phải bao gồm ít nhất 3 phân hệ cốt lõi và có sự tham gia của 3 đối tượng người dùng khác nhau. Hãy liệt kê đề xuất của bạn về các Actors và Modules chính kèm mô tả ngắn gọn để chúng ta thống nhất trước khi đi vào chi tiết."
+
+[PROMPT 2 - Làm sâu sắc vai trò và đặc tả các Modules]
+"Bản đề xuất rất tốt. Chúng ta sẽ chốt phương án:
+- 3 Actors: Bệnh nhân (Patient), Bác sĩ (Doctor), và Nhân viên Y tế/Admin (Medical Staff/Admin).
+- 3 Phân hệ: Phân hệ Đăng ký & Lịch hẹn, Phân hệ Hồ sơ bệnh án điện tử (EHR), Phân hệ Viện phí & Thanh toán.
+Bây giờ, hãy viết chi tiết hơn về các chức năng chính của từng phân hệ dưới dạng các User Stories cho từng đối tượng. Đối với mỗi User Story, hãy chỉ rõ: Story ID, Đối tượng tác động (Actor), Nội dung Story (As a... I want to... So that...), và Tiêu chí chấp nhận (Acceptance Criteria). Vui lòng trình bày dưới dạng bảng cho rõ ràng."
+
+[PROMPT 3 - Thiết kế Sơ đồ Use Case tổng quan]
+"Hãy thiết kế một sơ đồ Use Case tổng quan cho hệ thống này bằng ngôn ngữ mô tả Mermaid. Sơ đồ cần phân chia rõ ràng các phân hệ bằng subgraph và thể hiện mối quan hệ liên kết giữa các tác nhân (Patient, Doctor, Admin) với các use cases tương ứng của họ. Đảm bảo cú pháp Mermaid chuẩn xác để có thể render được trực tiếp."
+
+[PROMPT 4 - Phân tích & Đặc tả Phân hệ Viện phí (Bổ sung trạng thái)]
+"Trong Phân hệ Viện phí & Thanh toán, quy trình xử lý hóa đơn cần rõ ràng hơn. Hãy định nghĩa rõ các trạng thái của hóa đơn (Ví dụ: UNPAID, PAID, CANCELLED) và các hình thức thanh toán được chấp nhận (CASH, CREDIT_CARD, BANK_TRANSFER, E_WALLET). Đồng thời, bổ sung yêu cầu phi chức năng về bảo mật thông tin thanh toán và tuân thủ các tiêu chuẩn an toàn dữ liệu y tế (HIPAA)."
+
+[PROMPT 5 - Thiết kế Cơ sở dữ liệu & Sơ đồ ERD]
+"Bây giờ chúng ta sẽ chuyển sang phần thiết kế Cơ sở dữ liệu. Hãy xây dựng một sơ đồ ERD bằng Mermaid thể hiện các bảng dữ liệu cốt lõi gồm: Patients, Doctors, Appointments, MedicalRecords, Bills. Chỉ rõ các trường khóa chính (PK), khóa ngoại (FK), và các mối quan hệ (1-N, N-N, 1-1). Đồng thời, hãy viết từ điển dữ liệu (Data Dictionary) chi tiết dưới dạng bảng cho từng bảng thực thể này, gồm: Tên trường, Kiểu dữ liệu, Ràng buộc (PK, FK, Nullable...), và Mô tả chức năng."
+
+[PROMPT 6 - Bổ sung Bảo mật & Yêu cầu phi chức năng cho EHR]
+"Hồ sơ bệnh án điện tử (EHR) là dữ liệu cực kỳ nhạy cảm. Hãy viết thêm các yêu cầu phi chức năng chi tiết cho phân hệ EHR bao gồm: Kiểm soát truy cập dựa trên vai trò (RBAC), Nhật ký lịch sử thao tác (Audit trail), Mã hóa dữ liệu tại chỗ (Encryption at rest) và khi truyền tải (Encryption in transit). Trình bày thật khoa học."
+
+[PROMPT 7 - Tổng hợp tài liệu SRS hoàn chỉnh và chuyên nghiệp]
+"Tuyệt vời. Hãy tổng hợp toàn bộ các nội dung trên thành một bản Tài liệu Đặc tả Yêu cầu Phần mềm (SRS) hoàn chỉnh, viết bằng tiếng Việt chuyên nghiệp, ngôn từ trang trọng của một System Analyst. Cấu trúc tài liệu bao gồm:
+1. Giới thiệu chung (Mục tiêu, Phạm vi, Thuật ngữ)
+2. Mô tả tổng quan hệ thống (Kiến trúc, Actors, Modules)
+3. Đặc tả chức năng (Sơ đồ Use Case, Danh sách User Stories chi tiết dạng bảng)
+4. Thiết kế cơ sở dữ liệu (Sơ đồ ERD, Từ điển dữ liệu dạng bảng)
+5. Yêu cầu phi chức năng (Hiệu năng, Bảo mật & HIPAA, Khả năng mở rộng)
+Lưu ý: Không thêm bất kỳ câu chào hỏi, lời giới thiệu hay kết luận thừa thãi nào của AI (như 'Dưới đây là...', 'Hy vọng tài liệu này giúp ích...'), chỉ xuất ra nội dung đặc tả thuần túy để tôi xuất bản trực tiếp."
